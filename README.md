@@ -62,7 +62,7 @@ No modules.
 | <a name="input_default_tags"></a> [default\_tags](#input\_default\_tags) | Default resource tags | `map(string)` | <pre>{<br>  "Terraform": "true"<br>}</pre> | no |
 | <a name="input_enable_bucket_trigger"></a> [enable\_bucket\_trigger](#input\_enable\_bucket\_trigger) | If enabled triggers the lambda when an object is created is the specified bucket | `bool` | `false` | no |
 | <a name="input_enable_rds_s3import"></a> [enable\_rds\_s3import](#input\_enable\_rds\_s3import) | Whether to enable s3 import to the RDS. if bucket\_name is set access to the bucket will be given to rds. RDS will still need to have the extensions added. | `bool` | `false` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | Environment variables to pass to the lambda | `map(string)` | `null` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | Environment variables to pass to the lambda | <pre>object({<br>    variables = map(string)<br>  })</pre> | `null` | no |
 | <a name="input_function_name"></a> [function\_name](#input\_function\_name) | The name of the function e.g. incoming\_billing | `string` | n/a | yes |
 | <a name="input_handler_filename"></a> [handler\_filename](#input\_handler\_filename) | File and handler that the lambda runs, can be any supported language | `string` | `"index.js"` | no |
 | <a name="input_lambda_src_path"></a> [lambda\_src\_path](#input\_lambda\_src\_path) | Where are the files to be zipped? Be care of relative module paths | `string` | `"../src/"` | no |
