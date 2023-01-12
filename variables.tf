@@ -37,7 +37,9 @@ variable "log_retention_days" {
 }
 
 variable "environment" {
-  type        = map(string)
+    type = object({
+    variables = map(string)
+  })
   default     = null
   description = "Environment variables to pass to the lambda"
 

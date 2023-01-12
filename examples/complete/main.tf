@@ -11,9 +11,9 @@ module "simple" {
   function_name = "s3test"
 
   random_keeper_id = "dsadsa"
-  bucket_name = ""
+  bucket_name = "test"
   lambda_src_path = "${path.cwd}/../src/"
-   enable_bucket_trigger = true
+   enable_bucket_trigger = false
    enable_rds_s3import = true
 }
 

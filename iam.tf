@@ -70,7 +70,7 @@ POLICY
 
 
 resource "aws_iam_role_policy" "lambda_bucket" {
-  count = local.enable_bucket_trigger_count
+  count = length(var.bucket_name) >0 ? 1 :0
   role  = aws_iam_role.lambda.name
 
   policy = <<POLICY
