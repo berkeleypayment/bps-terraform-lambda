@@ -112,7 +112,6 @@ variable "rds_cluster_name" {
 
 variable "bucket_name" {
   type        = string
-  default     = null
   description = "s3 bucket that triggers the event"
 }
 
@@ -121,4 +120,10 @@ variable "enable_bucket_trigger" {
   type        = bool
   default     = false
   description = "If enabled triggers the lambda when an object is created is the specified bucket"
+}
+
+variable "enable_bucket_lambda_permissions" {
+  type        = bool
+  default     = false
+  description = "If enabled gives access to the bucket from lambda"
 }
