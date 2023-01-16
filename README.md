@@ -57,7 +57,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_bucket_filter_prefix"></a> [bucket\_filter\_prefix](#input\_bucket\_filter\_prefix) | The bucket prefix/directory that causes the lambda to fire. Default is blank (root) | `string` | `""` | no |
-| <a name="input_bucket_filter_suffix"></a> [bucket\_filter\_suffix](#input\_bucket\_filter\_suffix) | The bucket file that causes the lambda to fire | `string` | n/a | yes |
+| <a name="input_bucket_filter_suffix"></a> [bucket\_filter\_suffix](#input\_bucket\_filter\_suffix) | The bucket file that causes the lambda to fire | `string` | `""` | no |
 | <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | s3 bucket that triggers the event | `string` | n/a | yes |
 | <a name="input_default_tags"></a> [default\_tags](#input\_default\_tags) | Default resource tags | `map(string)` | <pre>{<br>  "Terraform": "true"<br>}</pre> | no |
 | <a name="input_enable_bucket_lambda_permissions"></a> [enable\_bucket\_lambda\_permissions](#input\_enable\_bucket\_lambda\_permissions) | If enabled gives access to the bucket from lambda | `bool` | `false` | no |
