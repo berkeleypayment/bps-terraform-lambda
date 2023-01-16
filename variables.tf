@@ -89,13 +89,13 @@ variable "runtime" {
 variable "bucket_filter_prefix" {
   type        = string
   description = "The bucket prefix/directory that causes the lambda to fire. Default is blank (root)"
-  default     = ""
+  default = ""
 }
 
 variable "bucket_filter_suffix" {
   type        = string
   description = "The bucket file that causes the lambda to fire"
-
+  default = ""
 }
 
 variable "enable_rds_s3import" {

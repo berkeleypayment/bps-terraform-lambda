@@ -5,7 +5,6 @@ module "simple" {
   namespace = var.namespace
   service   = var.service
 
-  bucket_filter_suffix = "file.csv"
 
   handler_filename = "index.handler"
   function_name    = "s3test"
