@@ -84,5 +84,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_lambda_arn"></a> [lambda\_arn](#output\_lambda\_arn) | n/a |
+| <a name="output_role_arn"></a> [role\_arn](#output\_role\_arn) | n/a |
+| <a name="output_role_name"></a> [role\_name](#output\_role\_name) | n/a |
 | <a name="output_s3_bucket"></a> [s3\_bucket](#output\_s3\_bucket) | n/a |
 <!-- END_TF_DOCS -->
